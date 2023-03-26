@@ -1,0 +1,11 @@
+.board {
+  width: 100%;
+  height: 100vh;
+  background: #2b1887;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  overflow-y: auto;
+}

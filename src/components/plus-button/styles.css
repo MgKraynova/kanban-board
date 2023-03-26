@@ -1,0 +1,9 @@
+.plusButton {
+  background: none;
+  border: none;
+}
+
+.plusButton:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}

@@ -1,0 +1,29 @@
+.button {
+  background: #d5ccff;
+  border-radius: 16px;
+  width: 360px;
+  min-width: 360px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 24px;
+  height: max-content;
+  justify-content: space-between;
+  border: none;
+  align-items: center;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.title {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+  color: #2b1887;
+  margin: 0;
+}
