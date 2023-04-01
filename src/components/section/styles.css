@@ -36,7 +36,7 @@
 }
 
 .tasks::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
 }
 
 .tasks::-webkit-scrollbar-track {

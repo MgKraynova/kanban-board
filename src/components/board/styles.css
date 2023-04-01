@@ -11,7 +11,7 @@
 }
 
 .board::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
 }
 
 .board::-webkit-scrollbar-track {
