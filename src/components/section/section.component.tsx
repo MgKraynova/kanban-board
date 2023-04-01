@@ -13,18 +13,20 @@ export const Section = ({ title }: TProps) => {
         <h2 className="title">{title}</h2>
         <PlusButton />
       </div>
-      <Task title="something" />
-      <Task title="something" />
-      <Task title="something" />
-      <Task title="something" />
-      <Task title="something" />
-      <Task title="something" />
-      <Task title="something" />
-      <Task title="something" />
-      <Task title="something" />
-      <Task title="something" />
-      <Task title="something" />
-      <Task title="something" />
+      <div className="tasks">
+        <Task title="something" />
+        <Task title="something" />
+        <Task title="something" />
+        <Task title="something" />
+        <Task title="something" />
+        <Task title="something" />
+        <Task title="something" />
+        <Task title="something" />
+        <Task title="something" />
+        <Task title="something" />
+        <Task title="something" />
+        <Task title="something" />
+      </div>
     </div>
   );
 };
