@@ -1,0 +1,8 @@
+.closeButton {
+  background: none;
+  border: none;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+}
