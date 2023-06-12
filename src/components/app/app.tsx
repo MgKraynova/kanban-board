@@ -1,5 +1,4 @@
-import React from 'react';
-import { Board } from '../board/board.component';
+import { Board } from '../board/board.component.tsx';
 
 function App() {
   return (

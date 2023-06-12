@@ -25,7 +25,7 @@ export const Section = ({ title }: TProps) => {
         <Task title="something" />
         <Task title="something" />
         <Task title="something" />
-        <Task title="something" />
+        <Task title="something blalalallalal lallalalalallalalalal blalalallalallall alalalallalalalal blalalallal allallalalalallalalalal blalala llalallallalal alallalalalal blalalallalallallala lalallalalalal" />
       </div>
     </div>
   );

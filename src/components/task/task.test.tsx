@@ -6,6 +6,7 @@ describe('<Task />', () => {
     render(<Task title="some title" />);
 
     const task = screen.getByTestId('task');
+
     expect(task).toBeInTheDocument();
   });
 });
