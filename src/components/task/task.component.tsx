@@ -1,5 +1,5 @@
 import './styles.css';
-import { CloseButton } from '../close-button/close-button.component';
+import { CloseButton } from '../../UI/close-button/close-button.component';
 type TProps = {
   title: string;
 };

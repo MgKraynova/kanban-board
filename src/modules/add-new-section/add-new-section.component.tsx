@@ -1,5 +1,5 @@
 import './styles.css';
-import { PlusIcon } from '../plus-icon/plus-icon.component';
+import { PlusIcon } from '../../UI/plus-icon/plus-icon.component';
 
 export const AddNewSection = () => {
   return (
