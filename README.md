@@ -10,6 +10,7 @@
 - [ ] получать туду из какой-нибудь апишки
 - [ ] установить конфиг для ESLint — @feature-sliced/eslint-config, и плагин для ESLint — @conarti/eslint-plugin-feature-sliced
 - [ ] добавить алиас для shared
+- [ ] добавить тесты при коммитах
 
 ![img.png](img.png)
 
