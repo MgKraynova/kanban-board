@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { PlusButton } from './plus-button.component';
+import { PlusButton } from './plus-button.component.tsx';
 
 describe('<PlusButton />', () => {
   it('It renders PlusButton', () => {

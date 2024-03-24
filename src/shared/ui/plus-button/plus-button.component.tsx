@@ -1,4 +1,4 @@
-import { PlusIcon } from '../plus-icon/plus-icon.component';
+import { PlusIcon } from '../../../ui/plus-icon/plus-icon.component.tsx';
 import './styles.css';
 
 export const PlusButton = () => {
