@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { PlusIcon } from './plus-icon.component';
+import { PlusIcon } from './plus-icon.component.tsx';
 
 describe('<PlusIcon />', () => {
   it('It renders plus icon', () => {
