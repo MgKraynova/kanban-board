@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Board } from 'pages/board';
+import {
+  RouterProvider
+} from 'react-router-dom';
 import './index.css';
+import { router } from 'src/app/router.tsx';
+
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <Board />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
