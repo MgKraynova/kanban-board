@@ -1,15 +1,23 @@
 module.exports = {
-  env: { browser: true, es2020: true, "vitest-globals/env": true },
+  env: { browser: true, es2020: true, 'vitest-globals/env': true },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
-    "plugin:vitest-globals/recommended"
+    'plugin:vitest-globals/recommended',
+    '@feature-sliced'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
+  settings: {
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true
+      }
+    }
+  },
   plugins: ['react-refresh'],
   rules: {
-    'react-refresh/only-export-components': 'warn',
-  },
-}
+    'react-refresh/only-export-components': 'warn'
+  }
+};
