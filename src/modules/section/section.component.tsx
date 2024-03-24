@@ -1,6 +1,6 @@
 import './styles.css';
 import { Task } from '../../components/task/task.component';
-import { PlusButton } from '../../shared/ui/plus-button';
+import { PlusButton } from 'src/shared/ui/plus-button';
 
 type TProps = {
   title: string;

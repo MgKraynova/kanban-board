@@ -1,5 +1,5 @@
 import './styles.css';
-import { CloseButton } from '../../shared/ui/close-button';
+import { CloseButton } from 'src/shared/ui/close-button';
 
 type TProps = {
   title: string;
