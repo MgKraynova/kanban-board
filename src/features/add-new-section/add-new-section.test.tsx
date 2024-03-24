@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { AddNewSection } from './add-new-section.component';
+import { AddNewSection } from 'src/features/add-new-section/add-new-section.component.tsx';
 
 describe('<AddNewSection />', () => {
   it('It renders AddNewSection', () => {

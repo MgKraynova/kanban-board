@@ -1,0 +1,1 @@
+export { AddNewSection } from './add-new-section.component.tsx';

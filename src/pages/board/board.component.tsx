@@ -1,6 +1,6 @@
 import './styles.css';
 import { Section } from '../../modules/section/section.component';
-import { AddNewSection } from '../../modules/add-new-section/add-new-section.component';
+import { AddNewSection } from 'features/add-new-section';
 
 export const Board = () => {
   return (
