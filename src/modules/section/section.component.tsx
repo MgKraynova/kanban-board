@@ -1,6 +1,6 @@
 import './styles.css';
-import { Task } from 'src/entities/task/task.component';
 import { PlusButton } from 'src/shared/ui/plus-button';
+import { Task } from 'entities/task';
 
 type TProps = {
   title: string;
@@ -25,7 +25,8 @@ export const Section = ({ title }: TProps) => {
         <Task title="something" />
         <Task title="something" />
         <Task title="something" />
-        <Task title="something blalalallalal lallalalalallalalalal blalalallalallall alalalallalalalal blalalallal allallalalalallalalalal blalala llalallallalal alallalalalal blalalallalallallala lalallalalalal" />
+        <Task
+          title="something blalalallalal lallalalalallalalalal blalalallalallall alalalallalalalal blalalallal allallalalalallalalalal blalala llalallallalal alallalalalal blalalallalallallala lalallalalalal" />
       </div>
     </div>
   );
