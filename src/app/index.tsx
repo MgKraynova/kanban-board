@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import 'src/app/index.css';
-import { Board } from 'src/pages/board/board.component.tsx';
+import { Board } from 'pages/board';
+import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
