@@ -16,7 +16,10 @@
 - [x] установить конфиг для ESLint — @feature-sliced/eslint-config
 - [x] добавить алиас для shared
 - [x] добавить тесты при коммитах
+- [ ] подумать, мб использовать эффектор
+- [ ] подумать, мб использовать реакт квери
+- [ ] пагинация в туду
 
 ![img.png](img.png)
 
-будущий апи https://dummyjson.com/
+будущий апи https://dummyjson.com/ или https://jsonplaceholder.typicode.com/
