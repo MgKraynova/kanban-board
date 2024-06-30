@@ -2,7 +2,7 @@ import './styles.css';
 
 export const CloseButton = () => {
   return (
-    <button className="closeButton" data-testid="close-button">
+    <button type="button" className="closeButton" data-testid="close-button">
       <svg
         width="24"
         height="24"

@@ -3,7 +3,7 @@ import { PlusIcon } from 'shared/ui/plus-icon';
 
 export const PlusButton = () => {
   return (
-    <button className="plusButton" data-testid="plus-button">
+    <button type="button" className="plusButton" data-testid="plus-button">
       <PlusIcon />
     </button>
   );
