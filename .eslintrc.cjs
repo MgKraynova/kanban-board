@@ -7,7 +7,8 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:vitest-globals/recommended',
     '@feature-sliced',
-    'plugin:@tanstack/eslint-plugin-query/recommended'
+    'plugin:@tanstack/eslint-plugin-query/recommended',
+    'plugin:jsx-a11y/recommended'
   ],
   parser: '@typescript-eslint/parser',
   root: true,
