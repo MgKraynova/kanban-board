@@ -87,6 +87,7 @@ module.exports = {
     'react/jsx-no-useless-fragment': 'error',
     'react/jsx-pascal-case': 'error',
     'react/no-access-state-in-setstate': 'error',
-    'react/no-invalid-html-attribute': 'error'
+    'react/no-invalid-html-attribute': 'error',
+    'react/no-multi-comp': 'error'
   }
 };
