@@ -7,7 +7,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:vitest-globals/recommended',
     '@feature-sliced',
-    "plugin:@tanstack/eslint-plugin-query/recommended"
+    'plugin:@tanstack/eslint-plugin-query/recommended'
   ],
   parser: '@typescript-eslint/parser',
   root: true,
@@ -22,9 +22,9 @@ module.exports = {
   plugins: ['react-refresh', '@typescript-eslint'],
   rules: {
     'react-refresh/only-export-components': 'warn',
-    "@tanstack/query/exhaustive-deps": "error",
-    "@tanstack/query/no-rest-destructuring": "warn",
-    "@tanstack/query/stable-query-client": "error",
+    '@tanstack/query/exhaustive-deps': 'error',
+    '@tanstack/query/no-rest-destructuring': 'warn',
+    '@tanstack/query/stable-query-client': 'error',
     '@typescript-eslint/consistent-type-definitions': ['error', 'type']
   }
 };
