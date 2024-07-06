@@ -60,7 +60,7 @@ module.exports = {
       { 'name': 'Link', 'linkAttribute': ['to', 'href'] }
     ]
   },
-  plugins: ['react-refresh', '@typescript-eslint', 'react'],
+  plugins: ['react-refresh', '@typescript-eslint', 'react', 'filename-rules'],
   rules: {
     'react-refresh/only-export-components': 'warn',
     '@tanstack/query/exhaustive-deps': 'error',
@@ -88,6 +88,9 @@ module.exports = {
     'react/jsx-pascal-case': 'error',
     'react/no-access-state-in-setstate': 'error',
     'react/no-invalid-html-attribute': 'error',
-    'react/no-multi-comp': 'error'
+    'react/no-multi-comp': 'error',
+
+    'filename-rules/match': ['error', { '.ts': 'kebab-case', '.tsx': 'kebab-case' }],
+
   }
 };
