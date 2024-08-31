@@ -19,7 +19,9 @@ module.exports = {
     sourceType: 'module',
     ecmaFeatures: {
       'jsx': true
-    }
+    },
+    tsconfigRootDir: __dirname,
+    project: ['./tsconfig.json']
   },
   settings: {
     'import/resolver': {
@@ -66,7 +68,7 @@ module.exports = {
     '@tanstack/query/exhaustive-deps': 'error',
     '@tanstack/query/no-rest-destructuring': 'warn',
     '@tanstack/query/stable-query-client': 'error',
-    '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+
     'react/boolean-prop-naming': [
       'error',
       {
@@ -92,5 +94,36 @@ module.exports = {
 
     'filename-rules/match': ['error', { '.ts': 'kebab-case', '.tsx': 'kebab-case' }],
 
+    '@typescript-eslint/no-use-before-define': 'error',
+    '@typescript-eslint/ban-ts-ignore': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/indent': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/default-param-last': 'error',
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: ['enumMember'],
+        format: ['UPPER_CASE'],
+      },
+      { selector: ['enum'], format: ['UPPER_CASE'] },
+      {
+        selector: ['function'],
+        format: ['camelCase'],
+      },
+      {
+        selector: 'variable',
+        types: ['boolean', 'array', 'number', 'string'],
+        modifiers: ['exported'],
+        format: ['UPPER_CASE'],
+      },
+      { selector: ['typeAlias'], format: ['PascalCase'], prefix: ['T'] },
+    ],
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: 'React' }],
+    '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+    '@typescript-eslint/max-params': 'error',
+    "@typescript-eslint/no-array-delete": "error",
   }
 };
