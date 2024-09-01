@@ -1,10 +1,5 @@
+import { TTodo } from 'entities/task';
 import { BACKEND_BASE_URL } from 'shared/config';
-
-export type TTodo = {
-  'id': string,
-  'title': string,
-  'status': string
-}
 
 export const todosLoader = async () => {
   const res = await fetch(`${BACKEND_BASE_URL}/todos`).then(res => res.json() as Promise<TTodo[]>);
