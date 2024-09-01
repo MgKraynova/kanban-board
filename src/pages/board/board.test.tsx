@@ -13,9 +13,9 @@ describe('<Board />', () => {
 
   it('It renders board component', () => {
     vi.mocked(useLoaderData).mockReturnValue({
-      newTodos: [],
-      doneTodos: [],
-      todosInProgress: []
+      newTasks: [],
+      finishedTasks: [],
+      tasksInProgress: []
     });
 
     render(<Board />);
@@ -27,9 +27,9 @@ describe('<Board />', () => {
 
   it('It renders Section To-do in Board', () => {
     vi.mocked(useLoaderData).mockReturnValue({
-      newTodos: [],
-      doneTodos: [],
-      todosInProgress: []
+      newTasks: [],
+      finishedTasks: [],
+      tasksInProgress: []
     });
 
     render(<Board />);

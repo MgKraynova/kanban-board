@@ -1,1 +1,1 @@
-export { todosLoader } from './todos-loader';
+export { tasksLoader } from './tasks-loader';
