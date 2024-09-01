@@ -3,7 +3,7 @@ import { Section } from './section.component';
 
 describe('<Section />', () => {
   it('It renders Section', () => {
-    render(<Section title="test-title" />);
+    render(<Section todos={[]} title="test-title" />);
 
     const section = screen.getByTestId('section');
 
