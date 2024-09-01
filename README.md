@@ -25,3 +25,4 @@
 ![img.png](img.png)
 
 будущий апи https://dummyjson.com/ или https://jsonplaceholder.typicode.com/
+npx json-server db.json
