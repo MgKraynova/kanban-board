@@ -1,12 +1,13 @@
-import { Task } from 'entities/task';
+import { Task, TTodo } from 'entities/task';
 import { PlusButton } from 'shared/ui/plus-button';
 import './styles.css';
 
 type TProps = {
   title: string;
+  todos: TTodo[]
 };
 
-export const Section = ({ title }: TProps) => {
+export const Section = ({ title, todos }: TProps) => {
   return (
     <div className="section" data-testid="section">
       <div className="header">
@@ -14,20 +15,7 @@ export const Section = ({ title }: TProps) => {
         <PlusButton />
       </div>
       <div className="tasks">
-        <Task title="something" />
-        <Task title="something" />
-        <Task title="something" />
-        <Task title="something" />
-        <Task title="something" />
-        <Task title="something" />
-        <Task title="something" />
-        <Task title="something" />
-        <Task title="something" />
-        <Task title="something" />
-        <Task title="something" />
-        <Task
-          title="something blalalallalal lallalalalallalalalal blalalallalallall alalalallalalalal blalalallal allallalalalallalalalal blalala llalallallalal alallalalalal blalalallalallallala lalallalalalal"
-        />
+        {todos.map(tido => <Task key={tido.id} title={tido.title} />)}
       </div>
     </div>
   );
