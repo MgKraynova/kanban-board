@@ -27,3 +27,7 @@
 
 будущий апи https://dummyjson.com/ или https://jsonplaceholder.typicode.com/
 npx json-server db.json
+
+
+#### 12.10.2024
+add npm run all scripts
