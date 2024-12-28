@@ -14,4 +14,4 @@
 - [x] для запуска проекта добавлена команда npm run dev, которая сначала запускает сервер, а потом - фронт
 
 ## Технологии
-React, TypeScript, react-router-dom, Feature-Sliced Design, vite, husky
+React, TypeScript, react-router-dom, Feature-Sliced Design, vite, husky, eslint, vitest
