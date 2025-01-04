@@ -1,1 +1,1 @@
-export { fetchTasks } from './fetch-tasks.ts';
+export { useTasks } from './use-tasks-query.ts';

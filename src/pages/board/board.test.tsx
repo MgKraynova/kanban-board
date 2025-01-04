@@ -1,41 +1,71 @@
-import { render, screen } from '@testing-library/react';
-export * from 'react-router-dom';
-import { useLoaderData } from 'react-router-dom';
-import { afterEach, vi } from 'vitest';
-import { Board } from './board.component';
+import { render, screen, waitFor } from '@testing-library/react';
+import { vi, MockedFunction } from 'vitest';
+import { Board } from 'pages/board/board.component.tsx';
+import { useTasks } from 'entities/task';
 
-describe('<Board />', () => {
-  vi.mock('react-router-dom');
+vi.mock('entities/task', async () => {
+  const originalModule = await vi.importActual('entities/task');
+  return {
+    ...originalModule,
+    useTasks: vi.fn(),
+  };
+});
 
-  afterEach(() => {
-    vi.resetAllMocks();
-  })
-
-  it('It renders board component', () => {
-    vi.mocked(useLoaderData).mockReturnValue({
-      newTasks: [],
-      finishedTasks: [],
-      tasksInProgress: []
+describe('Board', () => {
+  it('should render loading state', () => {
+    (useTasks as MockedFunction<typeof useTasks>).mockReturnValue({
+      data: {
+        newTasks: [],
+        tasksInProgress: [],
+        finishedTasks: [],
+      },
+      isLoading: true,
+      isSuccess: false,
     });
 
     render(<Board />);
 
-    const boardComponent = screen.getByTestId('board');
-
-    expect(boardComponent).toBeInTheDocument();
+    expect(screen.getByText('Загрузка')).toBeInTheDocument();
   });
 
-  it('It renders Section To-do in Board', () => {
-    vi.mocked(useLoaderData).mockReturnValue({
-      newTasks: [],
-      finishedTasks: [],
-      tasksInProgress: []
+  it('should render error state', () => {
+    (useTasks as MockedFunction<typeof useTasks>).mockReturnValue({
+      data: {
+        newTasks: [],
+        tasksInProgress: [],
+        finishedTasks: [],
+      },
+      isLoading: false,
+      isSuccess: false,
     });
 
     render(<Board />);
 
-    const sectionTitle = screen.getByText('To-Do');
+    expect(screen.getByText('Ошибка')).toBeInTheDocument();
+  });
 
-    expect(sectionTitle).toBeInTheDocument();
+  it('should render board with sections when tasks are fetched successfully', async () => {
+    const mockData = {
+      newTasks: [{ id: '1', title: 'Task 1', status: 'NEW' }],
+      tasksInProgress: [{ id: '2', title: 'Task 2', status: 'IN_PROGRESS' }],
+      finishedTasks: [{ id: '3', title: 'Task 3', status: 'DONE' }],
+    };
+
+    (useTasks as MockedFunction<typeof useTasks>).mockReturnValue({
+      data: mockData,
+      isLoading: false,
+      isSuccess: true,
+    });
+
+    render(<Board />);
+
+    await waitFor(() => {
+      expect(screen.getByText('To-Do')).toBeInTheDocument();
+      expect(screen.getByText('In progress')).toBeInTheDocument();
+      expect(screen.getByText('Done')).toBeInTheDocument();
+      expect(screen.getByText('Task 1')).toBeInTheDocument();
+      expect(screen.getByText('Task 2')).toBeInTheDocument();
+      expect(screen.getByText('Task 3')).toBeInTheDocument();
+    });
   });
 });
