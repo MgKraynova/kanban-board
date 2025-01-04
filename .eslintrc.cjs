@@ -10,7 +10,8 @@ module.exports = {
     'plugin:vitest-globals/recommended',
     '@feature-sliced',
     'plugin:@tanstack/eslint-plugin-query/recommended',
-    'plugin:jsx-a11y/recommended'
+    'plugin:jsx-a11y/recommended',
+    'plugin:@tanstack/query/recommended'
   ],
   parser: '@typescript-eslint/parser',
   root: true,
