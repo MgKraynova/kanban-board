@@ -31,3 +31,6 @@ npx json-server db.json
 
 #### 12.10.2024
 add npm run all scripts
+
+#### 04.01.2025
+rewrite logic and add react query
